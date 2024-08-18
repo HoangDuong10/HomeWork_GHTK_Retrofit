@@ -1,7 +1,7 @@
 package com.example.homework_ghtk_retrofit.repository
 
 import com.example.homework_ghtk_retrofit.model.PokemonResponse
-import com.example.homework_ghtk_retrofit.retrofit.ApiService
+import com.example.homework_ghtk_retrofit.network.ApiService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

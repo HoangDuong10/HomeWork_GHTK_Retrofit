@@ -1,4 +1,4 @@
-package com.example.homework_ghtk_retrofit.retrofit
+package com.example.homework_ghtk_retrofit.network
 
 import com.example.homework_ghtk_retrofit.model.PokemonResponse
 import retrofit2.Response

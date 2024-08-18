@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -68,11 +69,10 @@ dependencies {
     //hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
+// When using Kotlin.
     implementation (libs.androidx.cardview)
 
-    implementation (libs.refresh.layout.kernel)
-    implementation (libs.refresh.layout.classic)
-    implementation (libs.refresh.header.material)
+    implementation (libs.glide)
 }
 kapt {
     correctErrorTypes = true
