@@ -1,6 +1,7 @@
 package com.example.homework_ghtk_retrofit.di
 
 import com.example.homework_ghtk_retrofit.network.ApiService
+import com.google.gson.Gson
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -48,5 +49,13 @@ class NetworkModule {
         httpLoggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
         return httpLoggingInterceptor
     }
+
+    @Provides
+    @Singleton
+    fun provideGson(): Gson {
+        return Gson()
+    }
+
+
 
 }
